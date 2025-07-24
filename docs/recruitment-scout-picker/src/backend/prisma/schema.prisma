@@ -1,0 +1,92 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Candidate {
+  id             String      @id @default(uuid())
+  name           String
+  age            Int?
+  yearsOfExp     Int?
+  currentRole    String?
+  skills         String[]
+  will           String?
+  source         String      // "youtrust" | "draft"
+  sourceUrl      String?
+  pdfPath        String?
+  embedding      Float[]     // ベクトル埋め込み
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+  evaluations    Evaluation[]
+}
+
+model Evaluation {
+  id            String      @id @default(uuid())
+  candidateId   String
+  evaluatorId   String
+  skillScore    Int         // 0: パス, 1: 迷う, 2: よい
+  willScore     Int         // 0: パス, 1: 迷う, 2: よい
+  mindScore     Int         // 0: パス, 1: 迷う, 2: よい
+  comment       String?
+  templateId    String?     // 使用したテンプレートのID
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  
+  candidate     Candidate   @relation(fields: [candidateId], references: [id])
+  evaluator     Evaluator   @relation(fields: [evaluatorId], references: [id])
+  template      EvaluationTemplate? @relation(fields: [templateId], references: [id])
+  
+  @@unique([candidateId, evaluatorId])
+  @@index([templateId])
+}
+
+model Evaluator {
+  id           String        @id @default(uuid())
+  name         String
+  email        String        @unique
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  evaluations  Evaluation[]
+  templates    EvaluationTemplate[]
+}
+
+model EvaluationTemplate {
+  id          String   @id @default(uuid())
+  name        String   // テンプレート名（例：フロントエンドエンジニア）
+  description String?  // 説明
+  position    String   // 職種（Engineer, Designer, PM等）
+  skillWeight Float    @default(1.0) // スキルの重み
+  willWeight  Float    @default(1.0) // Willの重み
+  mindWeight  Float    @default(1.0) // マインドの重み
+  items       EvaluationTemplateItem[]
+  evaluations Evaluation[]
+  createdById String   // 作成者ID
+  createdBy   Evaluator @relation(fields: [createdById], references: [id])
+  isPublic    Boolean  @default(false) // 公開テンプレート
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([position])
+  @@index([createdById])
+}
+
+model EvaluationTemplateItem {
+  id         String   @id @default(uuid())
+  templateId String
+  template   EvaluationTemplate @relation(fields: [templateId], references: [id], onDelete: Cascade)
+  category   String   // skill, will, mind
+  name       String   // 項目名（例：React経験）
+  description String? // 詳細説明
+  weight     Float    @default(1.0) // この項目の重み
+  required   Boolean  @default(false) // 必須項目かどうか
+  order      Int      // 表示順
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([templateId])
+  @@index([category])
+}
