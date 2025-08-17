@@ -1,0 +1,216 @@
+[
+  {
+    "id": "overclanker",
+    "name": "オーバークランカー",
+    "nodes": [
+      {
+        "id": "ovc_01",
+        "kind": "small",
+        "grants": {
+          "click_cps_pct": 20
+        },
+        "cost": 1
+      },
+      {
+        "id": "ovc_02",
+        "kind": "small",
+        "grants": {
+          "channel_speed_ms": -80
+        },
+        "requires": [
+          "ovc_01"
+        ],
+        "cost": 1
+      },
+      {
+        "id": "ovc_03",
+        "kind": "notable",
+        "grants": {
+          "click_dmg_more_pct": 15,
+          "crit_chance_pct": 8
+        },
+        "requires": [
+          "ovc_02"
+        ],
+        "cost": 2
+      },
+      {
+        "id": "ovc_04",
+        "kind": "small",
+        "grants": {
+          "leech_pct": 0.5
+        },
+        "requires": [
+          "ovc_03"
+        ],
+        "cost": 1
+      },
+      {
+        "id": "ovc_05",
+        "kind": "notable",
+        "grants": {
+          "on_click_burst_pct": 30,
+          "area_pct": 10
+        },
+        "requires": [
+          "ovc_04"
+        ],
+        "cost": 2
+      },
+      {
+        "id": "ovc_06",
+        "kind": "small",
+        "grants": {
+          "cast_speed_pct": 6
+        },
+        "requires": [
+          "ovc_05"
+        ],
+        "cost": 1
+      },
+      {
+        "id": "ovc_07",
+        "kind": "notable",
+        "grants": {
+          "channel_cost_down_pct": 15,
+          "crit_multi_pct": 12
+        },
+        "requires": [
+          "ovc_06"
+        ],
+        "cost": 2
+      },
+      {
+        "id": "ovc_08",
+        "kind": "small",
+        "grants": {
+          "max_life_pct": 6
+        },
+        "requires": [
+          "ovc_07"
+        ],
+        "cost": 1
+      },
+      {
+        "id": "ovc_cap",
+        "kind": "cornerstone",
+        "desc": "クリック中、ミニオン与ダメ+40%。非クリック時-20%。",
+        "tags": [
+          "clicker",
+          "minion"
+        ],
+        "requires": [
+          "ovc_08"
+        ],
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "id": "automata",
+    "name": "オートマタ師",
+    "nodes": [
+      {
+        "id": "aut_01",
+        "kind": "small",
+        "grants": {
+          "totem_max": 1
+        },
+        "cost": 1
+      },
+      {
+        "id": "aut_02",
+        "kind": "small",
+        "grants": {
+          "totem_dmg_pct": 12
+        },
+        "requires": [
+          "aut_01"
+        ],
+        "cost": 1
+      },
+      {
+        "id": "aut_03",
+        "kind": "notable",
+        "grants": {
+          "totem_cast_speed_pct": 15,
+          "area_pct": 10
+        },
+        "requires": [
+          "aut_02"
+        ],
+        "cost": 2
+      },
+      {
+        "id": "aut_04",
+        "kind": "small",
+        "grants": {
+          "cooldown_recovery_pct": 8
+        },
+        "requires": [
+          "aut_03"
+        ],
+        "cost": 1
+      },
+      {
+        "id": "aut_05",
+        "kind": "notable",
+        "grants": {
+          "auto_cast_interval_ms": -120,
+          "totem_dmg_more_pct": 12
+        },
+        "requires": [
+          "aut_04"
+        ],
+        "cost": 2
+      },
+      {
+        "id": "aut_06",
+        "kind": "small",
+        "grants": {
+          "minion_dmg_pct": 10
+        },
+        "requires": [
+          "aut_05"
+        ],
+        "cost": 1
+      },
+      {
+        "id": "aut_07",
+        "kind": "notable",
+        "grants": {
+          "on_kill_autosummon": 1,
+          "duration_pct": 15
+        },
+        "requires": [
+          "aut_06"
+        ],
+        "cost": 2
+      },
+      {
+        "id": "aut_08",
+        "kind": "small",
+        "grants": {
+          "evasion_pct": 10
+        },
+        "requires": [
+          "aut_07"
+        ],
+        "cost": 1
+      },
+      {
+        "id": "aut_cap",
+        "kind": "cornerstone",
+        "desc": "手動スキル使用不可。トーテム/召喚が周期自動発動。",
+        "tags": [
+          "automation",
+          "totem"
+        ],
+        "requires": [
+          "aut_08"
+        ],
+        "cost": 3
+      }
+    ]
+  }
+]

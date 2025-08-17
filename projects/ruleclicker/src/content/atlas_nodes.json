@@ -1,0 +1,450 @@
+{
+  "branches": [
+    {
+      "id": "atlas_summon",
+      "name": "召喚特化枝",
+      "nodes": [
+        {
+          "id": "atlas_summon_01",
+          "name": "召喚特化 1",
+          "grants": {
+            "minion_pack_weight_pct": 6
+          },
+          "cost": 1
+        },
+        {
+          "id": "atlas_summon_02",
+          "name": "召喚特化 2",
+          "grants": {
+            "minion_drop_bias_pct": 6
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_summon_01"
+          ]
+        },
+        {
+          "id": "atlas_summon_03",
+          "name": "召喚特化 3",
+          "grants": {
+            "boss_chance_pct": 3
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_summon_02"
+          ]
+        },
+        {
+          "id": "atlas_summon_04",
+          "name": "召喚特化 4",
+          "grants": {
+            "minion_pack_weight_pct": 9
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_summon_03"
+          ]
+        },
+        {
+          "id": "atlas_summon_05",
+          "name": "召喚特化 5",
+          "grants": {
+            "minion_drop_bias_pct": 9
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_summon_04"
+          ]
+        },
+        {
+          "id": "atlas_summon_06",
+          "name": "召喚特化 6",
+          "grants": {
+            "boss_chance_pct": 5
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_summon_05"
+          ]
+        },
+        {
+          "id": "atlas_summon_07",
+          "name": "召喚特化 7",
+          "grants": {
+            "minion_pack_weight_pct": 12
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_summon_06"
+          ]
+        },
+        {
+          "id": "atlas_summon_08",
+          "name": "召喚特化 8",
+          "grants": {
+            "minion_drop_bias_pct": 12
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_summon_07"
+          ]
+        },
+        {
+          "id": "atlas_summon_09",
+          "name": "召喚特化 9",
+          "grants": {
+            "boss_chance_pct": 6
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_summon_08"
+          ]
+        },
+        {
+          "id": "atlas_summon_10",
+          "name": "召喚特化 10",
+          "grants": {
+            "minion_pack_weight_pct": 15
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_summon_09"
+          ]
+        },
+        {
+          "id": "atlas_summon_11",
+          "name": "召喚特化 11",
+          "grants": {
+            "minion_drop_bias_pct": 15
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_10"
+          ]
+        },
+        {
+          "id": "atlas_summon_12",
+          "name": "召喚特化 12",
+          "grants": {
+            "boss_chance_pct": 8
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_11"
+          ]
+        },
+        {
+          "id": "atlas_summon_13",
+          "name": "召喚特化 13",
+          "grants": {
+            "minion_pack_weight_pct": 18
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_12"
+          ]
+        },
+        {
+          "id": "atlas_summon_14",
+          "name": "召喚特化 14",
+          "grants": {
+            "minion_drop_bias_pct": 18
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_13"
+          ]
+        },
+        {
+          "id": "atlas_summon_15",
+          "name": "召喚特化 15",
+          "grants": {
+            "boss_chance_pct": 9
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_14"
+          ]
+        },
+        {
+          "id": "atlas_summon_16",
+          "name": "召喚特化 16",
+          "grants": {
+            "minion_pack_weight_pct": 21
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_15"
+          ]
+        },
+        {
+          "id": "atlas_summon_17",
+          "name": "召喚特化 17",
+          "grants": {
+            "minion_drop_bias_pct": 21
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_16"
+          ]
+        },
+        {
+          "id": "atlas_summon_18",
+          "name": "召喚特化 18",
+          "grants": {
+            "boss_chance_pct": 11
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_17"
+          ]
+        },
+        {
+          "id": "atlas_summon_19",
+          "name": "召喚特化 19",
+          "grants": {
+            "minion_pack_weight_pct": 24
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_18"
+          ]
+        },
+        {
+          "id": "atlas_summon_20",
+          "name": "召喚特化 20",
+          "grants": {
+            "minion_drop_bias_pct": 24
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_summon_19"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas_craft",
+      "name": "クラフト経済枝",
+      "nodes": [
+        {
+          "id": "atlas_craft_01",
+          "name": "クラフト経済 1",
+          "grants": {
+            "essence_drop_mult_pct": 5
+          },
+          "cost": 1
+        },
+        {
+          "id": "atlas_craft_02",
+          "name": "クラフト経済 2",
+          "grants": {
+            "map_drop_mult_pct": 5
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_craft_01"
+          ]
+        },
+        {
+          "id": "atlas_craft_03",
+          "name": "クラフト経済 3",
+          "grants": {
+            "elite_density_mult_pct": 3
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_craft_02"
+          ]
+        },
+        {
+          "id": "atlas_craft_04",
+          "name": "クラフト経済 4",
+          "grants": {
+            "essence_drop_mult_pct": 8
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_craft_03"
+          ]
+        },
+        {
+          "id": "atlas_craft_05",
+          "name": "クラフト経済 5",
+          "grants": {
+            "map_drop_mult_pct": 8
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_craft_04"
+          ]
+        },
+        {
+          "id": "atlas_craft_06",
+          "name": "クラフト経済 6",
+          "grants": {
+            "elite_density_mult_pct": 5
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_craft_05"
+          ]
+        },
+        {
+          "id": "atlas_craft_07",
+          "name": "クラフト経済 7",
+          "grants": {
+            "essence_drop_mult_pct": 11
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_craft_06"
+          ]
+        },
+        {
+          "id": "atlas_craft_08",
+          "name": "クラフト経済 8",
+          "grants": {
+            "map_drop_mult_pct": 11
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_craft_07"
+          ]
+        },
+        {
+          "id": "atlas_craft_09",
+          "name": "クラフト経済 9",
+          "grants": {
+            "elite_density_mult_pct": 6
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_craft_08"
+          ]
+        },
+        {
+          "id": "atlas_craft_10",
+          "name": "クラフト経済 10",
+          "grants": {
+            "essence_drop_mult_pct": 14
+          },
+          "cost": 1,
+          "requires": [
+            "atlas_craft_09"
+          ]
+        },
+        {
+          "id": "atlas_craft_11",
+          "name": "クラフト経済 11",
+          "grants": {
+            "map_drop_mult_pct": 14
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_10"
+          ]
+        },
+        {
+          "id": "atlas_craft_12",
+          "name": "クラフト経済 12",
+          "grants": {
+            "elite_density_mult_pct": 8
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_11"
+          ]
+        },
+        {
+          "id": "atlas_craft_13",
+          "name": "クラフト経済 13",
+          "grants": {
+            "essence_drop_mult_pct": 17
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_12"
+          ]
+        },
+        {
+          "id": "atlas_craft_14",
+          "name": "クラフト経済 14",
+          "grants": {
+            "map_drop_mult_pct": 17
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_13"
+          ]
+        },
+        {
+          "id": "atlas_craft_15",
+          "name": "クラフト経済 15",
+          "grants": {
+            "elite_density_mult_pct": 9
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_14"
+          ]
+        },
+        {
+          "id": "atlas_craft_16",
+          "name": "クラフト経済 16",
+          "grants": {
+            "essence_drop_mult_pct": 20
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_15"
+          ]
+        },
+        {
+          "id": "atlas_craft_17",
+          "name": "クラフト経済 17",
+          "grants": {
+            "map_drop_mult_pct": 20
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_16"
+          ]
+        },
+        {
+          "id": "atlas_craft_18",
+          "name": "クラフト経済 18",
+          "grants": {
+            "elite_density_mult_pct": 11
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_17"
+          ]
+        },
+        {
+          "id": "atlas_craft_19",
+          "name": "クラフト経済 19",
+          "grants": {
+            "essence_drop_mult_pct": 23
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_18"
+          ]
+        },
+        {
+          "id": "atlas_craft_20",
+          "name": "クラフト経済 20",
+          "grants": {
+            "map_drop_mult_pct": 23
+          },
+          "cost": 2,
+          "requires": [
+            "atlas_craft_19"
+          ]
+        }
+      ]
+    }
+  ]
+}

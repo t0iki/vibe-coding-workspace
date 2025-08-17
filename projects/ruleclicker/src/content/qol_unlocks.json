@@ -1,0 +1,137 @@
+[
+  {
+    "id": "qol_hold_click",
+    "name": "長押しクリック",
+    "requires": {
+      "playtime_h": 0
+    },
+    "effects": [
+      "hold_to_channel"
+    ],
+    "desc": "クリック長押しでチャネリング"
+  },
+  {
+    "id": "qol_auto_pick",
+    "name": "自動拾い",
+    "requires": {
+      "playtime_h": 0.5,
+      "shards": 50
+    },
+    "effects": [
+      "auto_pickup",
+      "stack_same"
+    ],
+    "desc": "同種は自動スタック"
+  },
+  {
+    "id": "qol_autodecomp",
+    "name": "自動分解/精錬",
+    "requires": {
+      "playtime_h": 1
+    },
+    "effects": [
+      "auto_salvage"
+    ],
+    "desc": "ゴミレアを自動分解"
+  },
+  {
+    "id": "qol_filter_v1",
+    "name": "フィルタV1",
+    "requires": {
+      "playtime_h": 2
+    },
+    "effects": [
+      "loot_filter_basic"
+    ],
+    "desc": "不要レアを非表示"
+  },
+  {
+    "id": "qol_autoclick_1",
+    "name": "オートクリック1.5cps",
+    "requires": {
+      "playtime_h": 2.5,
+      "shards": 120
+    },
+    "effects": [
+      "auto_click_1_5cps"
+    ],
+    "desc": "序盤の快適さ向上"
+  },
+  {
+    "id": "qol_preset_2",
+    "name": "装備プリセット×2",
+    "requires": {
+      "playtime_h": 5
+    },
+    "effects": [
+      "preset_slots_2"
+    ],
+    "desc": "ワンクリ切替"
+  },
+  {
+    "id": "qol_skill_auto",
+    "name": "スキル回し自動化",
+    "requires": {
+      "playtime_h": 7
+    },
+    "effects": [
+      "auto_rotation"
+    ],
+    "desc": "スキル自動発動"
+  },
+  {
+    "id": "qol_filter_v2",
+    "name": "フィルタV2（条件式）",
+    "requires": {
+      "playtime_h": 12
+    },
+    "effects": [
+      "loot_filter_advanced"
+    ],
+    "desc": "条件式で細かく指定"
+  },
+  {
+    "id": "qol_autoclick_3",
+    "name": "オートクリック3cps",
+    "requires": {
+      "playtime_h": 18
+    },
+    "effects": [
+      "auto_click_3cps"
+    ],
+    "desc": "中盤以降はこちらが最適"
+  },
+  {
+    "id": "qol_full_auto",
+    "name": "全自動化",
+    "requires": {
+      "playtime_h": 40
+    },
+    "effects": [
+      "full_auto"
+    ],
+    "desc": "クリック不要"
+  },
+  {
+    "id": "qol_map_chain_20",
+    "name": "マップ連鎖×20",
+    "requires": {
+      "playtime_h": 45
+    },
+    "effects": [
+      "map_chain_20"
+    ],
+    "desc": "周回キュー"
+  },
+  {
+    "id": "qol_preset_5",
+    "name": "ビルドプリセット×5",
+    "requires": {
+      "playtime_h": 60
+    },
+    "effects": [
+      "preset_slots_5"
+    ],
+    "desc": "試行コストを下げる"
+  }
+]

@@ -1,0 +1,432 @@
+{
+  "affix_pools": {
+    "wand": {
+      "prefix": [
+        {
+          "id": "add_light_dmg",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 1,
+              "max": 3,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 4,
+              "max": 7,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 8,
+              "max": 12,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 13,
+              "max": 18,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 19,
+              "max": 25,
+              "weight": 10
+            }
+          ]
+        },
+        {
+          "id": "cast_speed_pct",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 3,
+              "max": 5,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 6,
+              "max": 7,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 8,
+              "max": 9,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 10,
+              "max": 11,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 12,
+              "max": 14,
+              "weight": 10
+            }
+          ]
+        }
+      ],
+      "suffix": [
+        {
+          "id": "crit_chance_pct",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 6,
+              "max": 8,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 9,
+              "max": 11,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 12,
+              "max": 14,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 15,
+              "max": 17,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 18,
+              "max": 20,
+              "weight": 10
+            }
+          ]
+        },
+        {
+          "id": "elem_pen_pct",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 2,
+              "max": 3,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 4,
+              "max": 5,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 6,
+              "max": 7,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 8,
+              "max": 9,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 10,
+              "max": 12,
+              "weight": 10
+            }
+          ]
+        }
+      ]
+    },
+    "bow": {
+      "prefix": [
+        {
+          "id": "proj_damage_pct",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 6,
+              "max": 9,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 10,
+              "max": 13,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 14,
+              "max": 18,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 19,
+              "max": 24,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 25,
+              "max": 30,
+              "weight": 10
+            }
+          ]
+        }
+      ],
+      "suffix": [
+        {
+          "id": "proj_speed_pct",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 6,
+              "max": 9,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 10,
+              "max": 12,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 13,
+              "max": 15,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 16,
+              "max": 18,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 19,
+              "max": 22,
+              "weight": 10
+            }
+          ]
+        }
+      ]
+    },
+    "staff": {
+      "prefix": [
+        {
+          "id": "area_damage_pct",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 6,
+              "max": 9,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 10,
+              "max": 13,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 14,
+              "max": 18,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 19,
+              "max": 24,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 25,
+              "max": 30,
+              "weight": 10
+            }
+          ]
+        }
+      ],
+      "suffix": [
+        {
+          "id": "max_mana_pct",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 6,
+              "max": 9,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 10,
+              "max": 12,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 13,
+              "max": 15,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 16,
+              "max": 18,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 19,
+              "max": 22,
+              "weight": 10
+            }
+          ]
+        }
+      ]
+    },
+    "chest": {
+      "prefix": [
+        {
+          "id": "max_life",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 20,
+              "max": 35,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 36,
+              "max": 55,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 56,
+              "max": 80,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 81,
+              "max": 110,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 111,
+              "max": 150,
+              "weight": 10
+            }
+          ]
+        }
+      ],
+      "suffix": [
+        {
+          "id": "res_all_pct",
+          "tiers": [
+            {
+              "tier": 5,
+              "min": 6,
+              "max": 8,
+              "weight": 80
+            },
+            {
+              "tier": 4,
+              "min": 9,
+              "max": 11,
+              "weight": 60
+            },
+            {
+              "tier": 3,
+              "min": 12,
+              "max": 14,
+              "weight": 40
+            },
+            {
+              "tier": 2,
+              "min": 15,
+              "max": 17,
+              "weight": 20
+            },
+            {
+              "tier": 1,
+              "min": 18,
+              "max": 20,
+              "weight": 10
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pity_rules": {
+    "link_up": [
+      {
+        "from": 3,
+        "to": 4,
+        "pity": 50
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "pity": 150
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "pity": 400
+      }
+    ],
+    "socket_open": [
+      {
+        "from": 3,
+        "to": 4,
+        "pity": 30
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "pity": 90
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "pity": 220
+      }
+    ]
+  },
+  "craft_costs": {
+    "reroll_magic": {
+      "essence": 3
+    },
+    "augment": {
+      "essence": 5
+    },
+    "regal": {
+      "essence": 12
+    },
+    "annul": {
+      "essence": 15
+    },
+    "link_force": {
+      "essence": 40,
+      "shards": 200
+    }
+  }
+}

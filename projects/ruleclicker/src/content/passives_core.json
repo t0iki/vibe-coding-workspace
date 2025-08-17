@@ -1,0 +1,1550 @@
+[
+  {
+    "id": "start_str",
+    "kind": "notable",
+    "grants": {
+      "max_life_pct": 5,
+      "armor_pct": 12
+    },
+    "desc": "開始点（力系）",
+    "cost": 0,
+    "pos": {
+      "x": 0,
+      "y": 0
+    },
+    "links": [
+      "p_str_01"
+    ]
+  },
+  {
+    "id": "start_dex",
+    "kind": "notable",
+    "grants": {
+      "evasion_pct": 12,
+      "proj_dmg_pct": 6
+    },
+    "desc": "開始点（敏捷系）",
+    "cost": 0,
+    "pos": {
+      "x": 60,
+      "y": 0
+    },
+    "links": [
+      "p_dex_01"
+    ]
+  },
+  {
+    "id": "start_int",
+    "kind": "notable",
+    "grants": {
+      "spell_dmg_pct": 8,
+      "res_all_pct": 5
+    },
+    "desc": "開始点（知性系）",
+    "cost": 0,
+    "pos": {
+      "x": -60,
+      "y": 0
+    },
+    "links": [
+      "p_int_01"
+    ]
+  },
+  {
+    "id": "p_str_01",
+    "kind": "small",
+    "grants": {
+      "evasion_pct": 6,
+      "area_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": 24.0,
+      "y": 0.0
+    },
+    "requires": [
+      "start_str"
+    ]
+  },
+  {
+    "id": "p_str_02",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 23.245995867087146,
+      "y": 5.968557291956515
+    },
+    "requires": [
+      "p_str_01"
+    ]
+  },
+  {
+    "id": "p_str_03",
+    "kind": "small",
+    "grants": {
+      "evasion_pct": 11
+    },
+    "cost": 1,
+    "pos": {
+      "x": 21.031360321052727,
+      "y": 11.562088178441169
+    },
+    "requires": [
+      "p_str_02"
+    ]
+  },
+  {
+    "id": "p_str_04",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 8
+    },
+    "cost": 1,
+    "pos": {
+      "x": 17.495247058113875,
+      "y": 16.42913054228853
+    },
+    "requires": [
+      "p_str_03"
+    ]
+  },
+  {
+    "id": "n_str_01",
+    "kind": "notable",
+    "grants": {
+      "proj_dmg_pct": 13,
+      "spell_dmg_pct": 13
+    },
+    "cost": 2,
+    "pos": {
+      "x": 12.859843079495917,
+      "y": 20.26387021204836
+    },
+    "requires": [
+      "p_str_04"
+    ]
+  },
+  {
+    "id": "p_str_05",
+    "kind": "small",
+    "grants": {
+      "proj_dmg_pct": 8,
+      "evasion_pct": 11
+    },
+    "cost": 1,
+    "pos": {
+      "x": 7.416407864998739,
+      "y": 22.825356391083684
+    },
+    "requires": [
+      "n_str_01"
+    ]
+  },
+  {
+    "id": "p_str_06",
+    "kind": "small",
+    "grants": {
+      "max_life_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 1.5069724687035193,
+      "y": 23.952641482278516
+    },
+    "requires": [
+      "p_str_05"
+    ]
+  },
+  {
+    "id": "p_str_07",
+    "kind": "small",
+    "grants": {
+      "armor_pct": 8
+    },
+    "cost": 1,
+    "pos": {
+      "x": -4.497151550057396,
+      "y": 23.574894017488525
+    },
+    "requires": [
+      "p_str_06"
+    ]
+  },
+  {
+    "id": "p_str_08",
+    "kind": "small",
+    "grants": {
+      "proj_dmg_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": -10.218702997561746,
+      "y": 21.715849259184466
+    },
+    "requires": [
+      "p_str_07"
+    ]
+  },
+  {
+    "id": "n_str_02",
+    "kind": "notable",
+    "grants": {
+      "cast_speed_pct": 9,
+      "area_pct": 13
+    },
+    "cost": 2,
+    "pos": {
+      "x": -15.298175753968554,
+      "y": 18.492317826618944
+    },
+    "requires": [
+      "p_str_08"
+    ]
+  },
+  {
+    "id": "p_str_09",
+    "kind": "small",
+    "grants": {
+      "cast_speed_pct": 3,
+      "spell_dmg_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": -19.416407864998735,
+      "y": 14.106846055019357
+    },
+    "requires": [
+      "n_str_02"
+    ]
+  },
+  {
+    "id": "p_str_10",
+    "kind": "small",
+    "grants": {
+      "cast_speed_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": -22.314635661318036,
+      "y": 8.834989264432267
+    },
+    "requires": [
+      "p_str_09"
+    ]
+  },
+  {
+    "id": "p_str_11",
+    "kind": "small",
+    "grants": {
+      "res_all_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": -23.810752831547468,
+      "y": 3.007997605543298
+    },
+    "requires": [
+      "p_str_10"
+    ]
+  },
+  {
+    "id": "p_str_12",
+    "kind": "small",
+    "grants": {
+      "crit_chance_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": -23.810752831547468,
+      "y": -3.007997605543303
+    },
+    "requires": [
+      "p_str_11"
+    ]
+  },
+  {
+    "id": "n_str_03",
+    "kind": "notable",
+    "grants": {
+      "evasion_pct": 23,
+      "armor_pct": 27,
+      "spell_dmg_pct": 4
+    },
+    "cost": 2,
+    "pos": {
+      "x": -22.31463566131803,
+      "y": -8.834989264432279
+    },
+    "requires": [
+      "p_str_12"
+    ]
+  },
+  {
+    "id": "p_str_13",
+    "kind": "small",
+    "grants": {
+      "evasion_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": -19.41640786499873,
+      "y": -14.10684605501936
+    },
+    "requires": [
+      "n_str_03"
+    ]
+  },
+  {
+    "id": "p_str_14",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": -15.298175753968549,
+      "y": -18.492317826618944
+    },
+    "requires": [
+      "p_str_13"
+    ]
+  },
+  {
+    "id": "p_str_15",
+    "kind": "small",
+    "grants": {
+      "crit_chance_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": -10.218702997561731,
+      "y": -21.715849259184473
+    },
+    "requires": [
+      "p_str_14"
+    ]
+  },
+  {
+    "id": "p_str_16",
+    "kind": "small",
+    "grants": {
+      "cast_speed_pct": 4
+    },
+    "cost": 1,
+    "pos": {
+      "x": -4.497151550057391,
+      "y": -23.57489401748853
+    },
+    "requires": [
+      "p_str_15"
+    ]
+  },
+  {
+    "id": "n_str_04",
+    "kind": "notable",
+    "grants": {
+      "trap_throw_speed_pct": 19,
+      "evasion_pct": 29
+    },
+    "cost": 2,
+    "pos": {
+      "x": 1.5069724687035293,
+      "y": -23.952641482278516
+    },
+    "requires": [
+      "p_str_16"
+    ]
+  },
+  {
+    "id": "p_str_17",
+    "kind": "small",
+    "grants": {
+      "evasion_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 7.4164078649987335,
+      "y": -22.825356391083687
+    },
+    "requires": [
+      "n_str_04"
+    ]
+  },
+  {
+    "id": "p_str_18",
+    "kind": "small",
+    "grants": {
+      "minion_dmg_pct": 8
+    },
+    "cost": 1,
+    "pos": {
+      "x": 12.859843079495922,
+      "y": -20.26387021204836
+    },
+    "requires": [
+      "p_str_17"
+    ]
+  },
+  {
+    "id": "p_str_19",
+    "kind": "small",
+    "grants": {
+      "minion_dmg_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": 17.495247058113886,
+      "y": -16.42913054228852
+    },
+    "requires": [
+      "p_str_18"
+    ]
+  },
+  {
+    "id": "p_str_20",
+    "kind": "small",
+    "grants": {
+      "evasion_pct": 11
+    },
+    "cost": 1,
+    "pos": {
+      "x": 21.031360321052727,
+      "y": -11.562088178441169
+    },
+    "requires": [
+      "p_str_19"
+    ]
+  },
+  {
+    "id": "cs_overclock",
+    "kind": "cornerstone",
+    "desc": "クリック/秒+150%。放置効率-40%。",
+    "tags": [
+      "clicker"
+    ],
+    "cost": 3,
+    "pos": {
+      "x": 23.24599586708715,
+      "y": -5.9685572919565075
+    },
+    "requires": [
+      "p_str_20"
+    ]
+  },
+  {
+    "id": "p_dex_01",
+    "kind": "small",
+    "grants": {
+      "evasion_pct": 8
+    },
+    "cost": 1,
+    "pos": {
+      "x": 84.0,
+      "y": 0.0
+    },
+    "requires": [
+      "start_dex"
+    ]
+  },
+  {
+    "id": "p_dex_02",
+    "kind": "small",
+    "grants": {
+      "penetration_light_pct": 2
+    },
+    "cost": 1,
+    "pos": {
+      "x": 83.24599586708715,
+      "y": 5.968557291956515
+    },
+    "requires": [
+      "p_dex_01"
+    ]
+  },
+  {
+    "id": "p_dex_03",
+    "kind": "small",
+    "grants": {
+      "proj_dmg_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 81.03136032105273,
+      "y": 11.562088178441169
+    },
+    "requires": [
+      "p_dex_02"
+    ]
+  },
+  {
+    "id": "p_dex_04",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": 77.49524705811388,
+      "y": 16.42913054228853
+    },
+    "requires": [
+      "p_dex_03"
+    ]
+  },
+  {
+    "id": "n_dex_01",
+    "kind": "notable",
+    "grants": {
+      "armor_pct": 21,
+      "cast_speed_pct": 11,
+      "evasion_pct": 9
+    },
+    "cost": 2,
+    "pos": {
+      "x": 72.85984307949592,
+      "y": 20.26387021204836
+    },
+    "requires": [
+      "p_dex_04"
+    ]
+  },
+  {
+    "id": "p_dex_05",
+    "kind": "small",
+    "grants": {
+      "minion_dmg_pct": 6,
+      "res_all_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": 67.41640786499875,
+      "y": 22.825356391083684
+    },
+    "requires": [
+      "n_dex_01"
+    ]
+  },
+  {
+    "id": "p_dex_06",
+    "kind": "small",
+    "grants": {
+      "res_all_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 61.506972468703516,
+      "y": 23.952641482278516
+    },
+    "requires": [
+      "p_dex_05"
+    ]
+  },
+  {
+    "id": "p_dex_07",
+    "kind": "small",
+    "grants": {
+      "crit_chance_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": 55.502848449942604,
+      "y": 23.574894017488525
+    },
+    "requires": [
+      "p_dex_06"
+    ]
+  },
+  {
+    "id": "p_dex_08",
+    "kind": "small",
+    "grants": {
+      "minion_dmg_pct": 8
+    },
+    "cost": 1,
+    "pos": {
+      "x": 49.78129700243825,
+      "y": 21.715849259184466
+    },
+    "requires": [
+      "p_dex_07"
+    ]
+  },
+  {
+    "id": "n_dex_02",
+    "kind": "notable",
+    "grants": {
+      "proj_dmg_pct": 13,
+      "spell_dmg_pct": 17,
+      "evasion_pct": 9
+    },
+    "cost": 2,
+    "pos": {
+      "x": 44.70182424603145,
+      "y": 18.492317826618944
+    },
+    "requires": [
+      "p_dex_08"
+    ]
+  },
+  {
+    "id": "p_dex_09",
+    "kind": "small",
+    "grants": {
+      "armor_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 40.58359213500127,
+      "y": 14.106846055019357
+    },
+    "requires": [
+      "n_dex_02"
+    ]
+  },
+  {
+    "id": "p_dex_10",
+    "kind": "small",
+    "grants": {
+      "armor_pct": 9
+    },
+    "cost": 1,
+    "pos": {
+      "x": 37.685364338681964,
+      "y": 8.834989264432267
+    },
+    "requires": [
+      "p_dex_09"
+    ]
+  },
+  {
+    "id": "p_dex_11",
+    "kind": "small",
+    "grants": {
+      "max_life_pct": 3
+    },
+    "cost": 1,
+    "pos": {
+      "x": 36.18924716845253,
+      "y": 3.007997605543298
+    },
+    "requires": [
+      "p_dex_10"
+    ]
+  },
+  {
+    "id": "p_dex_12",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 8
+    },
+    "cost": 1,
+    "pos": {
+      "x": 36.18924716845253,
+      "y": -3.007997605543303
+    },
+    "requires": [
+      "p_dex_11"
+    ]
+  },
+  {
+    "id": "n_dex_03",
+    "kind": "notable",
+    "grants": {
+      "evasion_pct": 19,
+      "cast_speed_pct": 10,
+      "crit_multi_pct": 6
+    },
+    "cost": 2,
+    "pos": {
+      "x": 37.68536433868197,
+      "y": -8.834989264432279
+    },
+    "requires": [
+      "p_dex_12"
+    ]
+  },
+  {
+    "id": "p_dex_13",
+    "kind": "small",
+    "grants": {
+      "res_all_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": 40.58359213500127,
+      "y": -14.10684605501936
+    },
+    "requires": [
+      "n_dex_03"
+    ]
+  },
+  {
+    "id": "p_dex_14",
+    "kind": "small",
+    "grants": {
+      "penetration_light_pct": 2
+    },
+    "cost": 1,
+    "pos": {
+      "x": 44.70182424603145,
+      "y": -18.492317826618944
+    },
+    "requires": [
+      "p_dex_13"
+    ]
+  },
+  {
+    "id": "p_dex_15",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 49.781297002438265,
+      "y": -21.715849259184473
+    },
+    "requires": [
+      "p_dex_14"
+    ]
+  },
+  {
+    "id": "p_dex_16",
+    "kind": "small",
+    "grants": {
+      "max_life_pct": 4,
+      "penetration_light_pct": 2
+    },
+    "cost": 1,
+    "pos": {
+      "x": 55.50284844994261,
+      "y": -23.57489401748853
+    },
+    "requires": [
+      "p_dex_15"
+    ]
+  },
+  {
+    "id": "n_dex_04",
+    "kind": "notable",
+    "grants": {
+      "max_life_pct": 8,
+      "penetration_light_pct": 10,
+      "proj_dmg_pct": 4
+    },
+    "cost": 2,
+    "pos": {
+      "x": 61.50697246870353,
+      "y": -23.952641482278516
+    },
+    "requires": [
+      "p_dex_16"
+    ]
+  },
+  {
+    "id": "p_dex_17",
+    "kind": "small",
+    "grants": {
+      "cast_speed_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": 67.41640786499873,
+      "y": -22.825356391083687
+    },
+    "requires": [
+      "n_dex_04"
+    ]
+  },
+  {
+    "id": "p_dex_18",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 9
+    },
+    "cost": 1,
+    "pos": {
+      "x": 72.85984307949592,
+      "y": -20.26387021204836
+    },
+    "requires": [
+      "p_dex_17"
+    ]
+  },
+  {
+    "id": "p_dex_19",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": 77.49524705811389,
+      "y": -16.42913054228852
+    },
+    "requires": [
+      "p_dex_18"
+    ]
+  },
+  {
+    "id": "p_dex_20",
+    "kind": "small",
+    "grants": {
+      "penetration_light_pct": 4
+    },
+    "cost": 1,
+    "pos": {
+      "x": 81.03136032105273,
+      "y": -11.562088178441169
+    },
+    "requires": [
+      "p_dex_19"
+    ]
+  },
+  {
+    "id": "cs_converter",
+    "kind": "cornerstone",
+    "desc": "物理→火100%。火→カオス50%。他属性-30%。",
+    "tags": [
+      "convert"
+    ],
+    "cost": 3,
+    "pos": {
+      "x": 83.24599586708715,
+      "y": -5.9685572919565075
+    },
+    "requires": [
+      "p_dex_20"
+    ]
+  },
+  {
+    "id": "p_int_01",
+    "kind": "small",
+    "grants": {
+      "minion_dmg_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": -36.0,
+      "y": 0.0
+    },
+    "requires": [
+      "start_int"
+    ]
+  },
+  {
+    "id": "p_int_02",
+    "kind": "small",
+    "grants": {
+      "minion_dmg_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": -36.754004132912854,
+      "y": 5.968557291956515
+    },
+    "requires": [
+      "p_int_01"
+    ]
+  },
+  {
+    "id": "p_int_03",
+    "kind": "small",
+    "grants": {
+      "armor_pct": 9
+    },
+    "cost": 1,
+    "pos": {
+      "x": -38.96863967894727,
+      "y": 11.562088178441169
+    },
+    "requires": [
+      "p_int_02"
+    ]
+  },
+  {
+    "id": "p_int_04",
+    "kind": "small",
+    "grants": {
+      "max_life_pct": 4
+    },
+    "cost": 1,
+    "pos": {
+      "x": -42.504752941886125,
+      "y": 16.42913054228853
+    },
+    "requires": [
+      "p_int_03"
+    ]
+  },
+  {
+    "id": "n_int_01",
+    "kind": "notable",
+    "grants": {
+      "crit_chance_pct": 17,
+      "evasion_pct": 23,
+      "max_life_pct": 6
+    },
+    "cost": 2,
+    "pos": {
+      "x": -47.14015692050408,
+      "y": 20.26387021204836
+    },
+    "requires": [
+      "p_int_04"
+    ]
+  },
+  {
+    "id": "p_int_05",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": -52.58359213500126,
+      "y": 22.825356391083684
+    },
+    "requires": [
+      "n_int_01"
+    ]
+  },
+  {
+    "id": "p_int_06",
+    "kind": "small",
+    "grants": {
+      "cast_speed_pct": 3
+    },
+    "cost": 1,
+    "pos": {
+      "x": -58.493027531296484,
+      "y": 23.952641482278516
+    },
+    "requires": [
+      "p_int_05"
+    ]
+  },
+  {
+    "id": "p_int_07",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 9
+    },
+    "cost": 1,
+    "pos": {
+      "x": -64.4971515500574,
+      "y": 23.574894017488525
+    },
+    "requires": [
+      "p_int_06"
+    ]
+  },
+  {
+    "id": "p_int_08",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 4
+    },
+    "cost": 1,
+    "pos": {
+      "x": -70.21870299756175,
+      "y": 21.715849259184466
+    },
+    "requires": [
+      "p_int_07"
+    ]
+  },
+  {
+    "id": "n_int_02",
+    "kind": "notable",
+    "grants": {
+      "proj_dmg_pct": 12,
+      "cast_speed_pct": 12,
+      "evasion_pct": 9
+    },
+    "cost": 2,
+    "pos": {
+      "x": -75.29817575396855,
+      "y": 18.492317826618944
+    },
+    "requires": [
+      "p_int_08"
+    ]
+  },
+  {
+    "id": "p_int_09",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 9,
+      "armor_pct": 10
+    },
+    "cost": 1,
+    "pos": {
+      "x": -79.41640786499873,
+      "y": 14.106846055019357
+    },
+    "requires": [
+      "n_int_02"
+    ]
+  },
+  {
+    "id": "p_int_10",
+    "kind": "small",
+    "grants": {
+      "crit_multi_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": -82.31463566131804,
+      "y": 8.834989264432267
+    },
+    "requires": [
+      "p_int_09"
+    ]
+  },
+  {
+    "id": "p_int_11",
+    "kind": "small",
+    "grants": {
+      "penetration_light_pct": 3,
+      "spell_dmg_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": -83.81075283154746,
+      "y": 3.007997605543298
+    },
+    "requires": [
+      "p_int_10"
+    ]
+  },
+  {
+    "id": "p_int_12",
+    "kind": "small",
+    "grants": {
+      "cast_speed_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": -83.81075283154746,
+      "y": -3.007997605543303
+    },
+    "requires": [
+      "p_int_11"
+    ]
+  },
+  {
+    "id": "n_int_03",
+    "kind": "notable",
+    "grants": {
+      "penetration_light_pct": 6,
+      "proj_dmg_pct": 12,
+      "cast_speed_pct": 3
+    },
+    "cost": 2,
+    "pos": {
+      "x": -82.31463566131802,
+      "y": -8.834989264432279
+    },
+    "requires": [
+      "p_int_12"
+    ]
+  },
+  {
+    "id": "p_int_13",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 6,
+      "crit_multi_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": -79.41640786499873,
+      "y": -14.10684605501936
+    },
+    "requires": [
+      "n_int_03"
+    ]
+  },
+  {
+    "id": "p_int_14",
+    "kind": "small",
+    "grants": {
+      "crit_chance_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": -75.29817575396855,
+      "y": -18.492317826618944
+    },
+    "requires": [
+      "p_int_13"
+    ]
+  },
+  {
+    "id": "p_int_15",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 5
+    },
+    "cost": 1,
+    "pos": {
+      "x": -70.21870299756173,
+      "y": -21.715849259184473
+    },
+    "requires": [
+      "p_int_14"
+    ]
+  },
+  {
+    "id": "p_int_16",
+    "kind": "small",
+    "grants": {
+      "max_life_pct": 3
+    },
+    "cost": 1,
+    "pos": {
+      "x": -64.4971515500574,
+      "y": -23.57489401748853
+    },
+    "requires": [
+      "p_int_15"
+    ]
+  },
+  {
+    "id": "n_int_04",
+    "kind": "notable",
+    "grants": {
+      "trap_throw_speed_pct": 21,
+      "minion_dmg_pct": 21,
+      "crit_chance_pct": 5
+    },
+    "cost": 2,
+    "pos": {
+      "x": -58.49302753129647,
+      "y": -23.952641482278516
+    },
+    "requires": [
+      "p_int_16"
+    ]
+  },
+  {
+    "id": "p_int_17",
+    "kind": "small",
+    "grants": {
+      "minion_dmg_pct": 7,
+      "crit_chance_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": -52.58359213500127,
+      "y": -22.825356391083687
+    },
+    "requires": [
+      "n_int_04"
+    ]
+  },
+  {
+    "id": "n_int_05",
+    "kind": "notable",
+    "grants": {
+      "crit_multi_pct": 22,
+      "area_pct": 17
+    },
+    "cost": 2,
+    "pos": {
+      "x": -47.140156920504076,
+      "y": -20.26387021204836
+    },
+    "requires": [
+      "p_int_17"
+    ]
+  },
+  {
+    "id": "n_int_06",
+    "kind": "notable",
+    "grants": {
+      "max_life_pct": 11,
+      "evasion_pct": 20,
+      "trap_throw_speed_pct": 5
+    },
+    "cost": 2,
+    "pos": {
+      "x": -42.50475294188611,
+      "y": -16.42913054228852
+    },
+    "requires": [
+      "n_int_05"
+    ]
+  },
+  {
+    "id": "n_int_07",
+    "kind": "notable",
+    "grants": {
+      "armor_pct": 27,
+      "max_life_pct": 10
+    },
+    "cost": 2,
+    "pos": {
+      "x": -38.96863967894727,
+      "y": -11.562088178441169
+    },
+    "requires": [
+      "n_int_06"
+    ]
+  },
+  {
+    "id": "n_int_08",
+    "kind": "notable",
+    "grants": {
+      "max_life_pct": 9,
+      "penetration_light_pct": 6
+    },
+    "cost": 2,
+    "pos": {
+      "x": -36.754004132912854,
+      "y": -5.9685572919565075
+    },
+    "requires": [
+      "n_int_07"
+    ]
+  },
+  {
+    "id": "p_outer_01",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": 120.0,
+      "y": 0.0
+    },
+    "requires": [
+      "n_int_08"
+    ]
+  },
+  {
+    "id": "p_outer_02",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 8
+    },
+    "cost": 1,
+    "pos": {
+      "x": 115.13915683373969,
+      "y": 33.80790682097156
+    },
+    "requires": [
+      "p_outer_01"
+    ]
+  },
+  {
+    "id": "p_outer_03",
+    "kind": "small",
+    "grants": {
+      "armor_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 100.95042393974174,
+      "y": 64.8768980946717
+    },
+    "requires": [
+      "p_outer_02"
+    ]
+  },
+  {
+    "id": "p_outer_04",
+    "kind": "small",
+    "grants": {
+      "crit_chance_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": 78.58328807343422,
+      "y": 90.689948922511
+    },
+    "requires": [
+      "p_outer_03"
+    ]
+  },
+  {
+    "id": "p_outer_05",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 10
+    },
+    "cost": 1,
+    "pos": {
+      "x": 49.849801560226375,
+      "y": 109.1558394425422
+    },
+    "requires": [
+      "p_outer_04"
+    ]
+  },
+  {
+    "id": "cs_autodrive",
+    "kind": "cornerstone",
+    "desc": "手動クリック不可。全アクティブ周期発動（+50%CD）。",
+    "tags": [
+      "automation"
+    ],
+    "cost": 3,
+    "pos": {
+      "x": 17.077780592794213,
+      "y": 118.77857302571192
+    },
+    "requires": [
+      "p_outer_05"
+    ]
+  },
+  {
+    "id": "p_outer_06",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": -17.077780592794202,
+      "y": 118.77857302571194
+    },
+    "requires": [
+      "cs_autodrive"
+    ]
+  },
+  {
+    "id": "p_outer_07",
+    "kind": "small",
+    "grants": {
+      "evasion_pct": 11
+    },
+    "cost": 1,
+    "pos": {
+      "x": -49.84980156022636,
+      "y": 109.15583944254222
+    },
+    "requires": [
+      "p_outer_06"
+    ]
+  },
+  {
+    "id": "p_outer_08",
+    "kind": "small",
+    "grants": {
+      "cast_speed_pct": 3,
+      "armor_pct": 10
+    },
+    "cost": 1,
+    "pos": {
+      "x": -78.5832880734342,
+      "y": 90.689948922511
+    },
+    "requires": [
+      "p_outer_07"
+    ]
+  },
+  {
+    "id": "p_outer_09",
+    "kind": "small",
+    "grants": {
+      "spell_dmg_pct": 4
+    },
+    "cost": 1,
+    "pos": {
+      "x": -100.95042393974173,
+      "y": 64.87689809467173
+    },
+    "requires": [
+      "p_outer_08"
+    ]
+  },
+  {
+    "id": "p_outer_10",
+    "kind": "small",
+    "grants": {
+      "max_life_pct": 5,
+      "cast_speed_pct": 3
+    },
+    "cost": 1,
+    "pos": {
+      "x": -115.13915683373969,
+      "y": 33.80790682097156
+    },
+    "requires": [
+      "p_outer_09"
+    ]
+  },
+  {
+    "id": "p_outer_11",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 7
+    },
+    "cost": 1,
+    "pos": {
+      "x": -120.0,
+      "y": 1.469576158976824e-14
+    },
+    "requires": [
+      "p_outer_10"
+    ]
+  },
+  {
+    "id": "p_outer_12",
+    "kind": "small",
+    "grants": {
+      "crit_multi_pct": 10
+    },
+    "cost": 1,
+    "pos": {
+      "x": -115.13915683373969,
+      "y": -33.807906820971525
+    },
+    "requires": [
+      "p_outer_11"
+    ]
+  },
+  {
+    "id": "p_outer_13",
+    "kind": "small",
+    "grants": {
+      "armor_pct": 12
+    },
+    "cost": 1,
+    "pos": {
+      "x": -100.95042393974174,
+      "y": -64.8768980946717
+    },
+    "requires": [
+      "p_outer_12"
+    ]
+  },
+  {
+    "id": "p_outer_14",
+    "kind": "small",
+    "grants": {
+      "proj_dmg_pct": 8
+    },
+    "cost": 1,
+    "pos": {
+      "x": -78.58328807343423,
+      "y": -90.68994892251098
+    },
+    "requires": [
+      "p_outer_13"
+    ]
+  },
+  {
+    "id": "p_outer_15",
+    "kind": "small",
+    "grants": {
+      "evasion_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": -49.84980156022637,
+      "y": -109.15583944254222
+    },
+    "requires": [
+      "p_outer_14"
+    ]
+  },
+  {
+    "id": "cs_muster",
+    "kind": "cornerstone",
+    "desc": "召喚上限+3。本体ダメージ-30%。",
+    "tags": [
+      "summon"
+    ],
+    "cost": 3,
+    "pos": {
+      "x": -17.077780592794227,
+      "y": -118.77857302571192
+    },
+    "requires": [
+      "p_outer_15"
+    ]
+  },
+  {
+    "id": "p_outer_16",
+    "kind": "small",
+    "grants": {
+      "minion_dmg_pct": 6,
+      "spell_dmg_pct": 8
+    },
+    "cost": 1,
+    "pos": {
+      "x": 17.077780592794184,
+      "y": -118.77857302571194
+    },
+    "requires": [
+      "cs_muster"
+    ]
+  },
+  {
+    "id": "p_outer_17",
+    "kind": "small",
+    "grants": {
+      "minion_dmg_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 49.849801560226325,
+      "y": -109.15583944254223
+    },
+    "requires": [
+      "p_outer_16"
+    ]
+  },
+  {
+    "id": "p_outer_18",
+    "kind": "small",
+    "grants": {
+      "trap_throw_speed_pct": 10
+    },
+    "cost": 1,
+    "pos": {
+      "x": 78.58328807343423,
+      "y": -90.68994892251098
+    },
+    "requires": [
+      "p_outer_17"
+    ]
+  },
+  {
+    "id": "p_outer_19",
+    "kind": "small",
+    "grants": {
+      "evasion_pct": 11
+    },
+    "cost": 1,
+    "pos": {
+      "x": 100.95042393974174,
+      "y": -64.87689809467169
+    },
+    "requires": [
+      "p_outer_18"
+    ]
+  },
+  {
+    "id": "p_outer_20",
+    "kind": "small",
+    "grants": {
+      "max_life_pct": 6
+    },
+    "cost": 1,
+    "pos": {
+      "x": 115.13915683373969,
+      "y": -33.807906820971574
+    },
+    "requires": [
+      "p_outer_19"
+    ]
+  }
+]

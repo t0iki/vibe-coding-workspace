@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuleClicker</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="game-container">
+            <div class="main-panel">
+                <div class="enemy-area">
+                    <div id="enemy-pack" class="enemy-pack">
+                        <div class="enemy" data-hp="100" data-max-hp="100">
+                            <div class="hp-bar">
+                                <div class="hp-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="enemy-name">雑魚</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="click-area" id="click-area">
+                    <button class="click-button" id="click-button">クリック！</button>
+                </div>
+            </div>
+            
+            <div class="side-panel">
+                <div class="stats">
+                    <h3>ステータス</h3>
+                    <p>DPS: <span id="dps">0</span></p>
+                    <p>クリック数: <span id="click-count">0</span></p>
+                    <p>倒した敵: <span id="kill-count">0</span></p>
+                </div>
+                
+                <div class="runes">
+                    <h3>アクティブルーン</h3>
+                    <div id="active-runes" class="rune-slots"></div>
+                    
+                    <h3>サポートルーン</h3>
+                    <div id="support-runes" class="rune-slots"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

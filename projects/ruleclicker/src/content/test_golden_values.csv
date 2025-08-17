@@ -1,0 +1,10 @@
+build,tier,base_dps,inc_pct,mores,crit_chance,crit_multi,enemy_res,penetration,expected_dps,expected_ehp
+ChainLightning,T1,21,40,-0.15+-0.1,5,1.5,30,0,16.137,960.0
+ChainLightning,T2,21,100,-0.15+-0.1,15,1.6,30,15,29.768,1920.0
+ChainLightning,T3,21,160,-0.15+-0.1,35,1.8,30,30,53.464,3520.0
+SkeletonSwarm,T1,22,40,0.1,5,1.5,0,0,33.815,960.0
+SkeletonSwarm,T2,22,100,0.1,15,1.6,0,15,51.37,1920.0
+SkeletonSwarm,T3,22,160,0.1,35,1.8,0,30,78.422,3520.0
+TrapBurst,T1,15,40,-0.25+0.05,5,1.5,20,0,13.37,960.0
+TrapBurst,T2,15,100,-0.25+0.05,15,1.6,20,15,24.12,1920.0
+TrapBurst,T3,15,160,-0.25+0.05,35,1.8,20,30,38.76,3520.0

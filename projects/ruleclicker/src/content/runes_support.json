@@ -1,0 +1,134 @@
+[
+  {
+    "id": "s_multi",
+    "name": "多重発動",
+    "effect": {
+      "more": {
+        "hit": -0.25
+      },
+      "add": {
+        "repeat": 2
+      }
+    }
+  },
+  {
+    "id": "s_aoe",
+    "name": "範囲化",
+    "effect": {
+      "more": {
+        "area": 0.25,
+        "hit": -0.1
+      }
+    }
+  },
+  {
+    "id": "s_duration",
+    "name": "持続延長",
+    "effect": {
+      "more": {
+        "duration": 0.4,
+        "dot": 0.15
+      },
+      "add": {
+        "cost_mult": 0.1
+      }
+    }
+  },
+  {
+    "id": "s_chain",
+    "name": "連鎖化",
+    "effect": {
+      "chains": 2,
+      "more": {
+        "hit": -0.15
+      }
+    }
+  },
+  {
+    "id": "s_fork",
+    "name": "分裂",
+    "effect": {
+      "add": {
+        "fork": 1
+      },
+      "more": {
+        "hit": -0.2
+      }
+    }
+  },
+  {
+    "id": "s_convert_fire",
+    "name": "火変換",
+    "effect": {
+      "convert": {
+        "to_fire": 1.0
+      }
+    }
+  },
+  {
+    "id": "s_pierce",
+    "name": "貫通",
+    "effect": {
+      "pierce": 2,
+      "more": {
+        "hit": 0.05
+      }
+    }
+  },
+  {
+    "id": "s_leech",
+    "name": "ドレイン",
+    "effect": {
+      "add": {
+        "leech_pct": 0.01
+      },
+      "more": {
+        "hit": -0.05
+      }
+    }
+  },
+  {
+    "id": "s_channel",
+    "name": "チャネリング高速化",
+    "effect": {
+      "add": {
+        "channel_ms": -120
+      },
+      "more": {
+        "hit": -0.05
+      }
+    }
+  },
+  {
+    "id": "s_dotify",
+    "name": "DoT化",
+    "effect": {
+      "more": {
+        "dot": 0.4,
+        "hit": -0.3
+      }
+    }
+  },
+  {
+    "id": "s_costdown",
+    "name": "コスト軽減",
+    "effect": {
+      "add": {
+        "cost_mult": -0.2
+      }
+    }
+  },
+  {
+    "id": "s_minion_swarm",
+    "name": "群勢化",
+    "effect": {
+      "add": {
+        "minion_max": 2
+      },
+      "more": {
+        "hit": -0.2,
+        "dot": 0.1
+      }
+    }
+  }
+]

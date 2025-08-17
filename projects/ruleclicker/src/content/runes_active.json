@@ -1,0 +1,152 @@
+[
+  {
+    "id": "r_beam",
+    "name": "光束ビーム",
+    "base": {
+      "hit": 12,
+      "dps": 24,
+      "elem": "light",
+      "castMs": 500,
+      "proj": 1
+    },
+    "tags": [
+      "Spell",
+      "Projectile"
+    ],
+    "scales": [
+      "cast_speed",
+      "proj_speed"
+    ],
+    "levelReq": 1
+  },
+  {
+    "id": "r_chain_bolt",
+    "name": "連鎖雷弾",
+    "base": {
+      "hit": 9,
+      "dps": 21,
+      "elem": "light",
+      "castMs": 600,
+      "proj": 1
+    },
+    "tags": [
+      "Spell",
+      "Projectile"
+    ],
+    "scales": [
+      "cast_speed"
+    ],
+    "levelReq": 3
+  },
+  {
+    "id": "r_totem",
+    "name": "設置トーテム",
+    "base": {
+      "hit": 8,
+      "dps": 18,
+      "elem": "phys",
+      "castMs": 800
+    },
+    "tags": [
+      "Totem"
+    ],
+    "scales": [
+      "duration"
+    ],
+    "levelReq": 5
+  },
+  {
+    "id": "r_poison_rain",
+    "name": "毒雨",
+    "base": {
+      "hit": 3,
+      "dps": 28,
+      "elem": "chaos",
+      "castMs": 700,
+      "proj": 8
+    },
+    "tags": [
+      "DoT",
+      "Projectile",
+      "Spell"
+    ],
+    "scales": [
+      "area",
+      "duration"
+    ],
+    "levelReq": 7
+  },
+  {
+    "id": "r_trap",
+    "name": "時限トラップ",
+    "base": {
+      "hit": 20,
+      "dps": 15,
+      "elem": "fire",
+      "castMs": 900
+    },
+    "tags": [
+      "Trap"
+    ],
+    "scales": [
+      "trap_speed"
+    ],
+    "levelReq": 9
+  },
+  {
+    "id": "r_summon_skel",
+    "name": "骨の従者",
+    "base": {
+      "hit": 0,
+      "dps": 22,
+      "elem": "phys",
+      "castMs": 1000
+    },
+    "tags": [
+      "Summon"
+    ],
+    "scales": [
+      "minion_dmg",
+      "duration"
+    ],
+    "levelReq": 11
+  },
+  {
+    "id": "r_fire_burst",
+    "name": "灼熱爆",
+    "base": {
+      "hit": 16,
+      "dps": 16,
+      "elem": "fire",
+      "castMs": 650
+    },
+    "tags": [
+      "Spell",
+      "Area"
+    ],
+    "scales": [
+      "area",
+      "cast_speed"
+    ],
+    "levelReq": 13
+  },
+  {
+    "id": "r_frost_nova",
+    "name": "寒冷ノヴァ",
+    "base": {
+      "hit": 10,
+      "dps": 14,
+      "elem": "cold",
+      "castMs": 650
+    },
+    "tags": [
+      "Spell",
+      "Area"
+    ],
+    "scales": [
+      "area",
+      "cast_speed"
+    ],
+    "levelReq": 15
+  }
+]

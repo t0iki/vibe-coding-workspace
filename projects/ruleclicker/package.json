@@ -1,0 +1,13 @@
+{
+  "name": "ruleclicker",
+  "version": "0.1.0",
+  "description": "A PoE-inspired clicker game",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": ["game", "clicker", "browser"],
+  "author": "",
+  "license": "MIT"
+}
