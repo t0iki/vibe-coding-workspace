@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 import type { GameState } from '../domain/types'
 import { PLAYER_RADIUS, ENEMY_RADIUS, ATTACK_EFFECT_DURATION } from '../domain/constants'
 

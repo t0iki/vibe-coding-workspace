@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { GameCanvas } from './components/GameCanvas'
 import { GameUI } from './components/GameUI'
 import { PassiveTreeModal } from './components/PassiveTreeModal'

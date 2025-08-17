@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect, useState, type WheelEvent, type MouseEvent } from 'react'
 import type { PassiveTree, PassiveNode } from '../domain/passive'
 import { canAllocateNode } from '../domain/passive'
 
@@ -111,7 +111,7 @@ export function PassiveTreeModal({
   }
 
   // Pan and zoom handlers
-  const handleWheel = (e: React.WheelEvent) => {
+  const handleWheel = (e: WheelEvent<SVGSVGElement>) => {
     e.preventDefault()
     const scale = e.deltaY > 0 ? 1.1 : 0.9
     setViewBox(prev => ({
@@ -121,12 +121,12 @@ export function PassiveTreeModal({
     }))
   }
 
-  const handleMouseDown = (e: React.MouseEvent) => {
+  const handleMouseDown = (e: MouseEvent<SVGSVGElement>) => {
     setIsPanning(true)
     setPanStart({ x: e.clientX, y: e.clientY })
   }
 
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleMouseMove = (e: MouseEvent<SVGSVGElement>) => {
     if (!isPanning) return
     
     const dx = e.clientX - panStart.x
