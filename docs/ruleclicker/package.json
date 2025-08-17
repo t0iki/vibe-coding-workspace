@@ -12,7 +12,11 @@
     "lint": "biome lint .",
     "typecheck": "tsc --noEmit"
   },
-  "keywords": ["game", "clicker", "browser"],
+  "keywords": [
+    "game",
+    "clicker",
+    "browser"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
@@ -20,5 +24,13 @@
     "@types/node": "^20.14.10",
     "typescript": "^5.5.3",
     "vite": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "zod": "^4.0.17"
   }
 }
