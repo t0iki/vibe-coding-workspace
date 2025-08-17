@@ -2,15 +2,19 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { GameCanvas } from './components/GameCanvas'
 import { GameUI } from './components/GameUI'
 import { PassiveTreeModal } from './components/PassiveTreeModal'
+import { RuneSelector } from './components/RuneSelector'
 import { createGameEngine } from './game/engine'
 import { createPassiveTree, allocateNode, getUsedPassivePoints } from './domain/passive'
 import { loadPassiveTree } from './core/contentLoader'
+import { createEmptyRuneBuild } from './domain/rune'
 import type { GameState } from './domain/types'
 import type { PassiveTree } from './domain/passive'
+import type { RuneBuild } from './domain/rune'
 
 export function App() {
   const [gameState, setGameState] = useState<GameState | null>(null)
   const [passiveTree, setPassiveTree] = useState<PassiveTree>(createPassiveTree('str'))
+  const [runeBuild, setRuneBuild] = useState<RuneBuild>(createEmptyRuneBuild())
   const [showPassiveTree, setShowPassiveTree] = useState(false)
   const engineRef = useRef<ReturnType<typeof createGameEngine> | null>(null)
 
@@ -47,6 +51,20 @@ export function App() {
   const handleCanvasClick = useCallback(() => {
     engineRef.current?.handleClick()
   }, [])
+
+  // ルーンビルドが変更されたらエンジンに通知
+  useEffect(() => {
+    if (engineRef.current) {
+      engineRef.current.updateRuneBuild(runeBuild)
+    }
+  }, [runeBuild])
+  
+  // パッシブツリーが変更されたらエンジンに通知
+  useEffect(() => {
+    if (engineRef.current) {
+      engineRef.current.updatePassiveTree(passiveTree)
+    }
+  }, [passiveTree])
 
   const handleAllocateNode = useCallback((nodeId: string) => {
     if (!gameState) return
@@ -108,6 +126,11 @@ export function App() {
           <button className="control-btn" onClick={togglePassiveTree}>
             Passive Tree (P)
           </button>
+          <RuneSelector 
+            playerLevel={gameState.player.level}
+            currentBuild={runeBuild}
+            onBuildChange={setRuneBuild}
+          />
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react'
 import type { GameState } from '../domain/types'
 import { PLAYER_RADIUS, ENEMY_RADIUS, ATTACK_EFFECT_DURATION } from '../domain/constants'
+import { getElementColor, getEffectType } from '../domain/stats'
 
 interface GameCanvasProps {
   gameState: GameState
@@ -83,20 +84,17 @@ export function GameCanvas({ gameState, onClick }: GameCanvasProps) {
       svg.appendChild(enemyGroup)
     })
 
-    // Draw attack effect
+    // Draw attack effect based on rune type
     const currentTime = Date.now()
     const timeSinceAttack = currentTime - gameState.player.lastAttackTime
     
     if (timeSinceAttack < ATTACK_EFFECT_DURATION) {
-      const effect = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
-      effect.setAttribute('cx', String(gameState.player.position.x))
-      effect.setAttribute('cy', String(gameState.player.position.y))
-      effect.setAttribute('r', String(30 + (timeSinceAttack / 10)))
-      effect.setAttribute('fill', 'none')
-      effect.setAttribute('stroke', '#ffaa00')
-      effect.setAttribute('stroke-width', '2')
-      effect.setAttribute('opacity', String(1 - timeSinceAttack / ATTACK_EFFECT_DURATION))
-      svg.appendChild(effect)
+      const effectType = getEffectType(gameState)
+      const elem = gameState.runeBuild?.activeRune?.base.elem || 'phys'
+      const color = getElementColor(elem)
+      const opacity = 1 - timeSinceAttack / ATTACK_EFFECT_DURATION
+      
+      drawRuneEffect(svg, effectType, gameState.player.position, color, opacity, timeSinceAttack)
     }
   }, [gameState])
 
@@ -131,6 +129,99 @@ export function GameCanvas({ gameState, onClick }: GameCanvasProps) {
     group.appendChild(bar)
     
     return group
+  }
+
+  function drawRuneEffect(
+    svg: SVGSVGElement,
+    effectType: string,
+    position: { x: number, y: number },
+    color: string,
+    opacity: number,
+    timeSinceAttack: number
+  ) {
+    const group = document.createElementNS('http://www.w3.org/2000/svg', 'g')
+    group.setAttribute('opacity', String(opacity))
+    
+    switch (effectType) {
+      case 'beam': {
+        // 光束ビーム - 直線的なビーム
+        const beam = document.createElementNS('http://www.w3.org/2000/svg', 'rect')
+        beam.setAttribute('x', String(position.x))
+        beam.setAttribute('y', String(position.y - 100))
+        beam.setAttribute('width', String(5 + timeSinceAttack / 50))
+        beam.setAttribute('height', '200')
+        beam.setAttribute('fill', color)
+        beam.setAttribute('transform', `rotate(${timeSinceAttack / 5}, ${position.x}, ${position.y})`)
+        group.appendChild(beam)
+        break
+      }
+      
+      case 'chain': {
+        // 連鎖雷弾 - ジグザグの電撃
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+        const zigzag = `M ${position.x} ${position.y} L ${position.x + 50} ${position.y - 20} L ${position.x + 80} ${position.y + 10} L ${position.x + 120} ${position.y - 30}`
+        path.setAttribute('d', zigzag)
+        path.setAttribute('stroke', color)
+        path.setAttribute('stroke-width', '3')
+        path.setAttribute('fill', 'none')
+        group.appendChild(path)
+        break
+      }
+      
+      case 'rain': {
+        // 毒雨 - 降る粒子
+        for (let i = 0; i < 8; i++) {
+          const drop = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
+          drop.setAttribute('cx', String(position.x + (Math.random() - 0.5) * 100))
+          drop.setAttribute('cy', String(position.y - 50 + timeSinceAttack / 5 + i * 10))
+          drop.setAttribute('r', '3')
+          drop.setAttribute('fill', color)
+          group.appendChild(drop)
+        }
+        break
+      }
+      
+      case 'explosion': {
+        // 灼熱爆 - 爆発円
+        const explosion = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
+        explosion.setAttribute('cx', String(position.x))
+        explosion.setAttribute('cy', String(position.y))
+        explosion.setAttribute('r', String(20 + timeSinceAttack / 5))
+        explosion.setAttribute('fill', color)
+        explosion.setAttribute('fill-opacity', '0.3')
+        explosion.setAttribute('stroke', color)
+        explosion.setAttribute('stroke-width', '2')
+        group.appendChild(explosion)
+        break
+      }
+      
+      case 'nova': {
+        // 寒冷ノヴァ - 氷結リング
+        const nova = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
+        nova.setAttribute('cx', String(position.x))
+        nova.setAttribute('cy', String(position.y))
+        nova.setAttribute('r', String(30 + timeSinceAttack / 3))
+        nova.setAttribute('fill', 'none')
+        nova.setAttribute('stroke', color)
+        nova.setAttribute('stroke-width', String(5 - timeSinceAttack / 100))
+        group.appendChild(nova)
+        break
+      }
+      
+      default: {
+        // デフォルト - 基本的な円形エフェクト
+        const effect = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
+        effect.setAttribute('cx', String(position.x))
+        effect.setAttribute('cy', String(position.y))
+        effect.setAttribute('r', String(30 + timeSinceAttack / 10))
+        effect.setAttribute('fill', 'none')
+        effect.setAttribute('stroke', color)
+        effect.setAttribute('stroke-width', '2')
+        group.appendChild(effect)
+      }
+    }
+    
+    svg.appendChild(group)
   }
 
   return (

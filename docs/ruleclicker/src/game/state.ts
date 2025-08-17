@@ -50,15 +50,18 @@ export function damagePlayer(state: GameState, damage: number): GameState {
 
 export function addExperienceToPlayer(state: GameState, exp: number): GameState {
   let newPlayer = { ...state.player }
-  newPlayer.experience += exp
+  // デバッグ用: 経験値を5倍に
+  newPlayer.experience += exp * 5
   
   // レベルアップチェック
   while (newPlayer.experience >= newPlayer.experienceToNext) {
     const remaining = newPlayer.experience - newPlayer.experienceToNext
     newPlayer.level++
     newPlayer.experience = remaining
-    newPlayer.experienceToNext = Math.floor(100 * Math.pow(newPlayer.level, 1.5))
-    newPlayer.passivePoints++
+    // デバッグ用: 必要経験値を少なく
+    newPlayer.experienceToNext = Math.floor(50 + newPlayer.level * 20)
+    // デバッグ用: パッシブポイントを2ポイントずつ
+    newPlayer.passivePoints += 2
     newPlayer.maxHp += 50
     newPlayer.hp = newPlayer.maxHp // Full heal on level up
     newPlayer.damage += 5

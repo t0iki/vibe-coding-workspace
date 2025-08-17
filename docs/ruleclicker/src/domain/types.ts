@@ -1,3 +1,6 @@
+import type { PassiveTree } from './passive'
+import type { RuneBuild } from './rune'
+
 export type Elem = 'phys' | 'fire' | 'cold' | 'light' | 'chaos'
 export type Tag = 'Projectile' | 'Spell' | 'Trap' | 'Totem' | 'Summon' | 'Aura' | 'Melee' | 'DoT' | 'Channel'
 
@@ -38,6 +41,8 @@ export interface GameState {
   score: number
   wave: number
   lastSpawnTime: number
+  passiveTree?: PassiveTree
+  runeBuild?: RuneBuild
 }
 
 export interface GameConfig {

@@ -170,18 +170,74 @@ export function PassiveTreeModal({
         />
 
         {hoveredNode && (
-          <div className="node-tooltip">
-            <div className="tooltip-title">{hoveredNode.desc || hoveredNode.id}</div>
+          <div className="node-tooltip" style={{
+            position: 'absolute',
+            left: '10px',
+            top: '60px',
+            background: 'rgba(34, 34, 34, 0.95)',
+            padding: '12px',
+            border: '2px solid #666',
+            borderRadius: '6px',
+            minWidth: '220px',
+            boxShadow: '0 4px 8px rgba(0,0,0,0.3)',
+            zIndex: 1000
+          }}>
+            <div className="tooltip-title" style={{
+              fontWeight: 'bold',
+              marginBottom: '8px',
+              fontSize: '14px',
+              color: hoveredNode.kind === 'cornerstone' ? '#ff6' : hoveredNode.kind === 'notable' ? '#6cf' : '#fff'
+            }}>
+              {hoveredNode.desc || hoveredNode.id}
+            </div>
             {hoveredNode.grants && (
               <div className="tooltip-stats">
-                {Object.entries(hoveredNode.grants).map(([stat, value]) => (
-                  <div key={stat} className="stat-line">
-                    {stat}: +{value}
-                  </div>
-                ))}
+                {Object.entries(hoveredNode.grants).map(([stat, value]) => {
+                  const statDisplayNames: Record<string, string> = {
+                    'damage_pct': 'ダメージ増加',
+                    'phys_dmg_pct': '物理ダメージ増加',
+                    'spell_dmg_pct': 'スペルダメージ増加',
+                    'proj_dmg_pct': '投射物ダメージ増加',
+                    'attack_speed_pct': '攻撃速度',
+                    'crit_chance': 'クリティカル率',
+                    'crit_multi': 'クリティカル倍率',
+                    'max_life_pct': '最大ライフ',
+                    'armor_pct': 'アーマー',
+                    'evasion_pct': '回避率',
+                    'res_all_pct': '全耐性'
+                  }
+                  const displayName = statDisplayNames[stat] || stat
+                  return (
+                    <div key={stat} className="stat-line" style={{
+                      fontSize: '12px',
+                      margin: '2px 0',
+                      color: value > 0 ? '#8f8' : '#f88'
+                    }}>
+                      {displayName}: {value > 0 ? '+' : ''}{value}%
+                    </div>
+                  )
+                })}
               </div>
             )}
-            <div className="tooltip-cost">Cost: {hoveredNode.cost}</div>
+            <div className="tooltip-cost" style={{
+              marginTop: '8px',
+              paddingTop: '8px',
+              borderTop: '1px solid #444',
+              fontSize: '11px',
+              color: '#aaf'
+            }}>
+              コスト: {hoveredNode.cost} ポイント
+            </div>
+            {hoveredNode.kind === 'cornerstone' && (
+              <div style={{
+                marginTop: '5px',
+                fontSize: '11px',
+                color: '#fa6',
+                fontStyle: 'italic'
+              }}>
+                ⚠️ コーナーストーン - 強力だが制限あり
+              </div>
+            )}
           </div>
         )}
       </div>

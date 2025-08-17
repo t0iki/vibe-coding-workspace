@@ -1,4 +1,6 @@
 import type { GameState, GameConfig } from '../domain/types'
+import type { RuneBuild } from '../domain/rune'
+import type { PassiveTree } from '../domain/passive'
 import { DEFAULT_CONFIG } from '../domain/constants'
 import { createInitialState, pauseGame, resumeGame } from './state'
 import { shouldSpawnEnemy, spawnEnemy, moveEnemies, checkCollisions } from './enemy'
@@ -11,6 +13,8 @@ export interface GameEngine {
   pause: () => void
   resume: () => void
   handleClick: () => void
+  updateRuneBuild: (build: RuneBuild) => void
+  updatePassiveTree: (tree: PassiveTree) => void
 }
 
 export function createGameEngine(
@@ -20,6 +24,8 @@ export function createGameEngine(
   let state = createInitialState(config)
   let lastFrameTime = 0
   let animationId: number | null = null
+  let currentRuneBuild: RuneBuild | null = null
+  let currentPassiveTree: PassiveTree | null = null
 
   function update(deltaTime: number, currentTime: number) {
     if (state.paused) return
@@ -34,6 +40,16 @@ export function createGameEngine(
 
     // Check collisions
     state = checkCollisions(state)
+
+    // デバッグ用: 自動攻撃（毎秒2回）
+    if (currentTime - state.player.lastAttackTime > 500) {
+      // パッシブツリーとルーンビルドを含めた状態で攻撃
+      state = handleClick({
+        ...state,
+        passiveTree: currentPassiveTree || undefined,
+        runeBuild: currentRuneBuild || undefined
+      })
+    }
 
     // Notify update
     onUpdate(state)
@@ -73,8 +89,20 @@ export function createGameEngine(
     },
     
     handleClick: () => {
-      state = handleClick(state)
+      state = handleClick({
+        ...state,
+        passiveTree: currentPassiveTree || undefined,
+        runeBuild: currentRuneBuild || undefined
+      })
       onUpdate(state)
+    },
+    
+    updateRuneBuild: (build: RuneBuild) => {
+      currentRuneBuild = build
+    },
+    
+    updatePassiveTree: (tree: PassiveTree) => {
+      currentPassiveTree = tree
     }
   }
 }
