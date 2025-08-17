@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'projects/ruleclicker/**'
+      - 'docs/ruleclicker/**'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
@@ -30,20 +30,20 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-          cache-dependency-path: projects/ruleclicker/package-lock.json
+          cache-dependency-path: docs/ruleclicker/package-lock.json
 
       - name: Install dependencies
-        working-directory: projects/ruleclicker
+        working-directory: docs/ruleclicker
         run: npm ci
 
       - name: Build
-        working-directory: projects/ruleclicker
+        working-directory: docs/ruleclicker
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: projects/ruleclicker/dist
+          path: docs/ruleclicker/dist
 
   deploy:
     environment:

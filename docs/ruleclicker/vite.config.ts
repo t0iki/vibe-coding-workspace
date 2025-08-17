@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/vibe-coding-workspace/projects/ruleclicker/',
+  base: '/vibe-coding-workspace/ruleclicker/',
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
