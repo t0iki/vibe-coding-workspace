@@ -3,90 +3,70 @@
     "id": "m_dense",
     "danger": 1,
     "reward": 0.25,
-    "flags": [
-      "density"
-    ],
+    "flags": ["density"],
     "desc": "密度+25%"
   },
   {
     "id": "m_rare",
     "danger": 1,
     "reward": 0.25,
-    "flags": [
-      "rarity"
-    ],
+    "flags": ["rarity"],
     "desc": "レア度+25%"
   },
   {
     "id": "m_reflect",
     "danger": 3,
     "reward": 0.8,
-    "flags": [
-      "reflect"
-    ],
+    "flags": ["reflect"],
     "desc": "反射10%"
   },
   {
     "id": "m_dotfloor",
     "danger": 2,
     "reward": 0.4,
-    "flags": [
-      "hazard"
-    ],
+    "flags": ["hazard"],
     "desc": "持続床(DoT)"
   },
   {
     "id": "m_resist_all",
     "danger": 2,
     "reward": 0.4,
-    "flags": [
-      "resist"
-    ],
+    "flags": ["resist"],
     "desc": "敵全耐性+25%"
   },
   {
     "id": "m_bossrush",
     "danger": 3,
     "reward": 0.7,
-    "flags": [
-      "boss"
-    ],
+    "flags": ["boss"],
     "desc": "小ボス連戦"
   },
   {
     "id": "m_no_crit",
     "danger": 2,
     "reward": 0.5,
-    "flags": [
-      "critoff"
-    ],
+    "flags": ["critoff"],
     "desc": "クリティカル無効"
   },
   {
     "id": "m_minionbane",
     "danger": 2,
     "reward": 0.5,
-    "flags": [
-      "minion"
-    ],
+    "flags": ["minion"],
     "desc": "召喚へ追加ダメージ"
   },
   {
     "id": "m_slow_proj",
     "danger": 1,
     "reward": 0.2,
-    "flags": [
-      "proj"
-    ],
+    "flags": ["proj"],
     "desc": "投射速度-25%"
   },
   {
     "id": "m_glass",
     "danger": 2,
     "reward": 0.5,
-    "flags": [
-      "def"
-    ],
+    "flags": ["def"],
     "desc": "被ダメ+20%/与ダメ+10%"
   }
 ]

@@ -4,10 +4,21 @@
   "description": "A PoE-inspired clicker game",
   "type": "module",
   "scripts": {
-    "dev": "python3 -m http.server 8000",
-    "serve": "python3 -m http.server 8000"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "check": "biome check --apply .",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": ["game", "clicker", "browser"],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3"
+  }
 }

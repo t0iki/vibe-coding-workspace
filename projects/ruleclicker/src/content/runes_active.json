@@ -9,14 +9,8 @@
       "castMs": 500,
       "proj": 1
     },
-    "tags": [
-      "Spell",
-      "Projectile"
-    ],
-    "scales": [
-      "cast_speed",
-      "proj_speed"
-    ],
+    "tags": ["Spell", "Projectile"],
+    "scales": ["cast_speed", "proj_speed"],
     "levelReq": 1
   },
   {
@@ -29,13 +23,8 @@
       "castMs": 600,
       "proj": 1
     },
-    "tags": [
-      "Spell",
-      "Projectile"
-    ],
-    "scales": [
-      "cast_speed"
-    ],
+    "tags": ["Spell", "Projectile"],
+    "scales": ["cast_speed"],
     "levelReq": 3
   },
   {
@@ -47,12 +36,8 @@
       "elem": "phys",
       "castMs": 800
     },
-    "tags": [
-      "Totem"
-    ],
-    "scales": [
-      "duration"
-    ],
+    "tags": ["Totem"],
+    "scales": ["duration"],
     "levelReq": 5
   },
   {
@@ -65,15 +50,8 @@
       "castMs": 700,
       "proj": 8
     },
-    "tags": [
-      "DoT",
-      "Projectile",
-      "Spell"
-    ],
-    "scales": [
-      "area",
-      "duration"
-    ],
+    "tags": ["DoT", "Projectile", "Spell"],
+    "scales": ["area", "duration"],
     "levelReq": 7
   },
   {
@@ -85,12 +63,8 @@
       "elem": "fire",
       "castMs": 900
     },
-    "tags": [
-      "Trap"
-    ],
-    "scales": [
-      "trap_speed"
-    ],
+    "tags": ["Trap"],
+    "scales": ["trap_speed"],
     "levelReq": 9
   },
   {
@@ -102,13 +76,8 @@
       "elem": "phys",
       "castMs": 1000
     },
-    "tags": [
-      "Summon"
-    ],
-    "scales": [
-      "minion_dmg",
-      "duration"
-    ],
+    "tags": ["Summon"],
+    "scales": ["minion_dmg", "duration"],
     "levelReq": 11
   },
   {
@@ -120,14 +89,8 @@
       "elem": "fire",
       "castMs": 650
     },
-    "tags": [
-      "Spell",
-      "Area"
-    ],
-    "scales": [
-      "area",
-      "cast_speed"
-    ],
+    "tags": ["Spell", "Area"],
+    "scales": ["area", "cast_speed"],
     "levelReq": 13
   },
   {
@@ -139,14 +102,8 @@
       "elem": "cold",
       "castMs": 650
     },
-    "tags": [
-      "Spell",
-      "Area"
-    ],
-    "scales": [
-      "area",
-      "cast_speed"
-    ],
+    "tags": ["Spell", "Area"],
+    "scales": ["area", "cast_speed"],
     "levelReq": 15
   }
 ]

@@ -5,9 +5,7 @@
     "requires": {
       "playtime_h": 0
     },
-    "effects": [
-      "hold_to_channel"
-    ],
+    "effects": ["hold_to_channel"],
     "desc": "クリック長押しでチャネリング"
   },
   {
@@ -17,10 +15,7 @@
       "playtime_h": 0.5,
       "shards": 50
     },
-    "effects": [
-      "auto_pickup",
-      "stack_same"
-    ],
+    "effects": ["auto_pickup", "stack_same"],
     "desc": "同種は自動スタック"
   },
   {
@@ -29,9 +24,7 @@
     "requires": {
       "playtime_h": 1
     },
-    "effects": [
-      "auto_salvage"
-    ],
+    "effects": ["auto_salvage"],
     "desc": "ゴミレアを自動分解"
   },
   {
@@ -40,9 +33,7 @@
     "requires": {
       "playtime_h": 2
     },
-    "effects": [
-      "loot_filter_basic"
-    ],
+    "effects": ["loot_filter_basic"],
     "desc": "不要レアを非表示"
   },
   {
@@ -52,9 +43,7 @@
       "playtime_h": 2.5,
       "shards": 120
     },
-    "effects": [
-      "auto_click_1_5cps"
-    ],
+    "effects": ["auto_click_1_5cps"],
     "desc": "序盤の快適さ向上"
   },
   {
@@ -63,9 +52,7 @@
     "requires": {
       "playtime_h": 5
     },
-    "effects": [
-      "preset_slots_2"
-    ],
+    "effects": ["preset_slots_2"],
     "desc": "ワンクリ切替"
   },
   {
@@ -74,9 +61,7 @@
     "requires": {
       "playtime_h": 7
     },
-    "effects": [
-      "auto_rotation"
-    ],
+    "effects": ["auto_rotation"],
     "desc": "スキル自動発動"
   },
   {
@@ -85,9 +70,7 @@
     "requires": {
       "playtime_h": 12
     },
-    "effects": [
-      "loot_filter_advanced"
-    ],
+    "effects": ["loot_filter_advanced"],
     "desc": "条件式で細かく指定"
   },
   {
@@ -96,9 +79,7 @@
     "requires": {
       "playtime_h": 18
     },
-    "effects": [
-      "auto_click_3cps"
-    ],
+    "effects": ["auto_click_3cps"],
     "desc": "中盤以降はこちらが最適"
   },
   {
@@ -107,9 +88,7 @@
     "requires": {
       "playtime_h": 40
     },
-    "effects": [
-      "full_auto"
-    ],
+    "effects": ["full_auto"],
     "desc": "クリック不要"
   },
   {
@@ -118,9 +97,7 @@
     "requires": {
       "playtime_h": 45
     },
-    "effects": [
-      "map_chain_20"
-    ],
+    "effects": ["map_chain_20"],
     "desc": "周回キュー"
   },
   {
@@ -129,9 +106,7 @@
     "requires": {
       "playtime_h": 60
     },
-    "effects": [
-      "preset_slots_5"
-    ],
+    "effects": ["preset_slots_5"],
     "desc": "試行コストを下げる"
   }
 ]

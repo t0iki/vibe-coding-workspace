@@ -19,9 +19,7 @@
             "minion_drop_bias_pct": 6
           },
           "cost": 1,
-          "requires": [
-            "atlas_summon_01"
-          ]
+          "requires": ["atlas_summon_01"]
         },
         {
           "id": "atlas_summon_03",
@@ -30,9 +28,7 @@
             "boss_chance_pct": 3
           },
           "cost": 1,
-          "requires": [
-            "atlas_summon_02"
-          ]
+          "requires": ["atlas_summon_02"]
         },
         {
           "id": "atlas_summon_04",
@@ -41,9 +37,7 @@
             "minion_pack_weight_pct": 9
           },
           "cost": 1,
-          "requires": [
-            "atlas_summon_03"
-          ]
+          "requires": ["atlas_summon_03"]
         },
         {
           "id": "atlas_summon_05",
@@ -52,9 +46,7 @@
             "minion_drop_bias_pct": 9
           },
           "cost": 1,
-          "requires": [
-            "atlas_summon_04"
-          ]
+          "requires": ["atlas_summon_04"]
         },
         {
           "id": "atlas_summon_06",
@@ -63,9 +55,7 @@
             "boss_chance_pct": 5
           },
           "cost": 1,
-          "requires": [
-            "atlas_summon_05"
-          ]
+          "requires": ["atlas_summon_05"]
         },
         {
           "id": "atlas_summon_07",
@@ -74,9 +64,7 @@
             "minion_pack_weight_pct": 12
           },
           "cost": 1,
-          "requires": [
-            "atlas_summon_06"
-          ]
+          "requires": ["atlas_summon_06"]
         },
         {
           "id": "atlas_summon_08",
@@ -85,9 +73,7 @@
             "minion_drop_bias_pct": 12
           },
           "cost": 1,
-          "requires": [
-            "atlas_summon_07"
-          ]
+          "requires": ["atlas_summon_07"]
         },
         {
           "id": "atlas_summon_09",
@@ -96,9 +82,7 @@
             "boss_chance_pct": 6
           },
           "cost": 1,
-          "requires": [
-            "atlas_summon_08"
-          ]
+          "requires": ["atlas_summon_08"]
         },
         {
           "id": "atlas_summon_10",
@@ -107,9 +91,7 @@
             "minion_pack_weight_pct": 15
           },
           "cost": 1,
-          "requires": [
-            "atlas_summon_09"
-          ]
+          "requires": ["atlas_summon_09"]
         },
         {
           "id": "atlas_summon_11",
@@ -118,9 +100,7 @@
             "minion_drop_bias_pct": 15
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_10"
-          ]
+          "requires": ["atlas_summon_10"]
         },
         {
           "id": "atlas_summon_12",
@@ -129,9 +109,7 @@
             "boss_chance_pct": 8
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_11"
-          ]
+          "requires": ["atlas_summon_11"]
         },
         {
           "id": "atlas_summon_13",
@@ -140,9 +118,7 @@
             "minion_pack_weight_pct": 18
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_12"
-          ]
+          "requires": ["atlas_summon_12"]
         },
         {
           "id": "atlas_summon_14",
@@ -151,9 +127,7 @@
             "minion_drop_bias_pct": 18
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_13"
-          ]
+          "requires": ["atlas_summon_13"]
         },
         {
           "id": "atlas_summon_15",
@@ -162,9 +136,7 @@
             "boss_chance_pct": 9
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_14"
-          ]
+          "requires": ["atlas_summon_14"]
         },
         {
           "id": "atlas_summon_16",
@@ -173,9 +145,7 @@
             "minion_pack_weight_pct": 21
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_15"
-          ]
+          "requires": ["atlas_summon_15"]
         },
         {
           "id": "atlas_summon_17",
@@ -184,9 +154,7 @@
             "minion_drop_bias_pct": 21
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_16"
-          ]
+          "requires": ["atlas_summon_16"]
         },
         {
           "id": "atlas_summon_18",
@@ -195,9 +163,7 @@
             "boss_chance_pct": 11
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_17"
-          ]
+          "requires": ["atlas_summon_17"]
         },
         {
           "id": "atlas_summon_19",
@@ -206,9 +172,7 @@
             "minion_pack_weight_pct": 24
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_18"
-          ]
+          "requires": ["atlas_summon_18"]
         },
         {
           "id": "atlas_summon_20",
@@ -217,9 +181,7 @@
             "minion_drop_bias_pct": 24
           },
           "cost": 2,
-          "requires": [
-            "atlas_summon_19"
-          ]
+          "requires": ["atlas_summon_19"]
         }
       ]
     },
@@ -242,9 +204,7 @@
             "map_drop_mult_pct": 5
           },
           "cost": 1,
-          "requires": [
-            "atlas_craft_01"
-          ]
+          "requires": ["atlas_craft_01"]
         },
         {
           "id": "atlas_craft_03",
@@ -253,9 +213,7 @@
             "elite_density_mult_pct": 3
           },
           "cost": 1,
-          "requires": [
-            "atlas_craft_02"
-          ]
+          "requires": ["atlas_craft_02"]
         },
         {
           "id": "atlas_craft_04",
@@ -264,9 +222,7 @@
             "essence_drop_mult_pct": 8
           },
           "cost": 1,
-          "requires": [
-            "atlas_craft_03"
-          ]
+          "requires": ["atlas_craft_03"]
         },
         {
           "id": "atlas_craft_05",
@@ -275,9 +231,7 @@
             "map_drop_mult_pct": 8
           },
           "cost": 1,
-          "requires": [
-            "atlas_craft_04"
-          ]
+          "requires": ["atlas_craft_04"]
         },
         {
           "id": "atlas_craft_06",
@@ -286,9 +240,7 @@
             "elite_density_mult_pct": 5
           },
           "cost": 1,
-          "requires": [
-            "atlas_craft_05"
-          ]
+          "requires": ["atlas_craft_05"]
         },
         {
           "id": "atlas_craft_07",
@@ -297,9 +249,7 @@
             "essence_drop_mult_pct": 11
           },
           "cost": 1,
-          "requires": [
-            "atlas_craft_06"
-          ]
+          "requires": ["atlas_craft_06"]
         },
         {
           "id": "atlas_craft_08",
@@ -308,9 +258,7 @@
             "map_drop_mult_pct": 11
           },
           "cost": 1,
-          "requires": [
-            "atlas_craft_07"
-          ]
+          "requires": ["atlas_craft_07"]
         },
         {
           "id": "atlas_craft_09",
@@ -319,9 +267,7 @@
             "elite_density_mult_pct": 6
           },
           "cost": 1,
-          "requires": [
-            "atlas_craft_08"
-          ]
+          "requires": ["atlas_craft_08"]
         },
         {
           "id": "atlas_craft_10",
@@ -330,9 +276,7 @@
             "essence_drop_mult_pct": 14
           },
           "cost": 1,
-          "requires": [
-            "atlas_craft_09"
-          ]
+          "requires": ["atlas_craft_09"]
         },
         {
           "id": "atlas_craft_11",
@@ -341,9 +285,7 @@
             "map_drop_mult_pct": 14
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_10"
-          ]
+          "requires": ["atlas_craft_10"]
         },
         {
           "id": "atlas_craft_12",
@@ -352,9 +294,7 @@
             "elite_density_mult_pct": 8
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_11"
-          ]
+          "requires": ["atlas_craft_11"]
         },
         {
           "id": "atlas_craft_13",
@@ -363,9 +303,7 @@
             "essence_drop_mult_pct": 17
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_12"
-          ]
+          "requires": ["atlas_craft_12"]
         },
         {
           "id": "atlas_craft_14",
@@ -374,9 +312,7 @@
             "map_drop_mult_pct": 17
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_13"
-          ]
+          "requires": ["atlas_craft_13"]
         },
         {
           "id": "atlas_craft_15",
@@ -385,9 +321,7 @@
             "elite_density_mult_pct": 9
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_14"
-          ]
+          "requires": ["atlas_craft_14"]
         },
         {
           "id": "atlas_craft_16",
@@ -396,9 +330,7 @@
             "essence_drop_mult_pct": 20
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_15"
-          ]
+          "requires": ["atlas_craft_15"]
         },
         {
           "id": "atlas_craft_17",
@@ -407,9 +339,7 @@
             "map_drop_mult_pct": 20
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_16"
-          ]
+          "requires": ["atlas_craft_16"]
         },
         {
           "id": "atlas_craft_18",
@@ -418,9 +348,7 @@
             "elite_density_mult_pct": 11
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_17"
-          ]
+          "requires": ["atlas_craft_17"]
         },
         {
           "id": "atlas_craft_19",
@@ -429,9 +357,7 @@
             "essence_drop_mult_pct": 23
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_18"
-          ]
+          "requires": ["atlas_craft_18"]
         },
         {
           "id": "atlas_craft_20",
@@ -440,9 +366,7 @@
             "map_drop_mult_pct": 23
           },
           "cost": 2,
-          "requires": [
-            "atlas_craft_19"
-          ]
+          "requires": ["atlas_craft_19"]
         }
       ]
     }
