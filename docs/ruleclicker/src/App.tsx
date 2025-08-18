@@ -48,8 +48,12 @@ export function App() {
     window.location.reload()
   }, [])
 
-  const handleCanvasClick = useCallback(() => {
-    engineRef.current?.handleClick()
+  const handleCanvasMouseDown = useCallback(() => {
+    engineRef.current?.handleMouseDown()
+  }, [])
+
+  const handleCanvasMouseUp = useCallback(() => {
+    engineRef.current?.handleMouseUp()
   }, [])
 
   // ルーンビルドが変更されたらエンジンに通知
@@ -106,7 +110,8 @@ export function App() {
         <div className="game-content">
           <GameCanvas 
             gameState={gameState}
-            onClick={handleCanvasClick}
+            onMouseDown={handleCanvasMouseDown}
+            onMouseUp={handleCanvasMouseUp}
           />
           
           <GameUI 

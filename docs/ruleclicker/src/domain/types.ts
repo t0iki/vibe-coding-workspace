@@ -24,6 +24,9 @@ export interface Player extends Entity {
   experience: number
   experienceToNext: number
   passivePoints: number
+  isHoldingAttack?: boolean
+  holdStartTime?: number
+  lastDotTime?: number
 }
 
 export interface Enemy extends Entity {
